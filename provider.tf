@@ -5,6 +5,10 @@ terraform {
       version = "~>4.16.0"
     }
   }
+   backend "gcs" {
+    bucket  = "test123jhwfhsgijn"
+    prefix  = "terraform-cloudbuild/state"
+    }
 }
 
 provider "google" {
