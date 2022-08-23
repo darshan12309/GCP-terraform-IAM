@@ -1,4 +1,4 @@
-data "google_storage_project_service_account" "gcs_service_account" {
+/*data "google_storage_project_service_account" "gcs_service_account" {
   project = "secret-epsilon-359902"
 }
 
@@ -29,4 +29,4 @@ resource "google_pubsub_topic_iam_binding" "binding" {
 resource "google_pubsub_subscription" "echo" {
   name  = "echo"
   topic = google_pubsub_topic.pubsub.name
-}
+}*/
