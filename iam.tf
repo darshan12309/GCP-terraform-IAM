@@ -1,4 +1,4 @@
-resource "google_project_iam_binding" "project" {
+/*resource "google_project_iam_binding" "project" {
   project = "secret-epsilon-359902"
   role    = "roles/viewer"
 
@@ -6,4 +6,4 @@ resource "google_project_iam_binding" "project" {
     "user:gcptrial02@gmail.com",
     "user:tejaswivanga.0303@gmail.com"
   ]
-}
+}*/
