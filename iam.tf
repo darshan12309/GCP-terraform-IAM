@@ -1,5 +1,5 @@
 resource "google_project_iam_binding" "project" {
-  project = "your-project-id"
+  project = "secret-epsilon-359902"
   role    = "roles/compute.admin"
 
   members = [
