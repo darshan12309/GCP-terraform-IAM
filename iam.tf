@@ -1,6 +1,6 @@
 resource "google_project_iam_binding" "project" {
   project = "your-project-id"
-  role    = "roles/editor"
+  role    = "roles/compute.admin"
 
   members = [
     "user:gcptrial02@gmail.com",
