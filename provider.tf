@@ -6,7 +6,7 @@ terraform {
     }
   }
    backend "gcs" {
-    bucket  = "test123jhwfhsgijn"
+    bucket  = "test-teju-1"
     prefix  = "terraform-cloudbuild/state"
     }
 }
