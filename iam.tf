@@ -5,6 +5,7 @@ resource "google_project_iam_binding" "project" {
   members = [
     "user:gcptrial02@gmail.com",
     "user:tejaswivanga.0303@gmail.com"
+    "serviceAccount:service-acc-1@secret-epsilon-359902.iam.gserviceaccount.com"
   ]
 }
 
