@@ -1,7 +1,5 @@
 locals {
-
-    iam_details = {
-
+  iam_details = {
     "iam_details"  = {
           role = "roles/editor"
           members = [
