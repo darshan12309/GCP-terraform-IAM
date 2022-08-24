@@ -5,8 +5,3 @@ resource "google_project_iam_binding" "project" {
   members = var.members #"user:gcptrial02@gmail.com"
 }
 
-variable "role" {
-}
-variable "members" {
-}
-
