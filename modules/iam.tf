@@ -1,11 +1,4 @@
-/*resource "google_project_iam_binding" "project" {
-  for_each              = local.iam_details
-  project = "secret-epsilon-359902"
-
-  role    = each.value.role #"roles/editor"
-  members = each.value.members #"user:gcptrial02@gmail.com"
-}*/
-  
+/* 
 resource "google_project_iam_binding" "project" {
   project = "secret-epsilon-359902"
 
@@ -16,4 +9,20 @@ resource "google_project_iam_binding" "project" {
 variable "role" {
 }
 variable "members" {
+}
+*/
+  
+resource "google_project_iam_policy" "project" {
+  project     = "your-project-id"
+  policy_data = data.google_iam_policy.admin.policy_data
+}
+
+data "google_iam_policy" "admin" {
+  binding {
+    role = "roles/editor"
+
+    members = [
+      "user:gcptrial02@gmail.com",
+    ]
+  }
 }
