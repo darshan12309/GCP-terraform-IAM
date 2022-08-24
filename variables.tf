@@ -6,7 +6,7 @@ locals {
           role = "roles/editor"
           members = [
             "user:gcptrial02@gmail.com" , 
-            "user:tejaswi.vanga030@gmail.com"
+            "user:tejaswi.vanga0303@gmail.com"
           ]
         }
     }
