@@ -13,7 +13,7 @@ variable "members" {
 */
   
 resource "google_project_iam_policy" "project" {
-  project     = "your-project-id"
+  project     = "secret-epsilon-359902"
   policy_data = data.google_iam_policy.admin.policy_data
 }
 
