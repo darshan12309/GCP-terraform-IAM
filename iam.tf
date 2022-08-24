@@ -3,7 +3,7 @@ resource "google_project_iam_binding" "project" {
   project = "secret-epsilon-359902"
 
   role    = each.value.role #"roles/editor"
-  members = [each.value.members ] #"user:gcptrial02@gmail.com"
+  members = each.value.members #"user:gcptrial02@gmail.com"
 }
 
 
